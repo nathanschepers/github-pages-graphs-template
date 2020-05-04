@@ -6,7 +6,12 @@ By: <nathan.schepers@protonmail.com>
 ---
 ## The Plot
 
+The above plot is generated from `scripts/test_plot_creation.py`. This plot is full of random data with random 'error
+bars'.
+
 ## Footnotes
+
+Some footnotes could go here.
 
 ---
 Updated on: {DATE}
