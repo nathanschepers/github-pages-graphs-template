@@ -1,0 +1,30 @@
+language: python
+python:
+  - "3.7"
+install:
+  - pip install -r requirements.txt
+script:
+  - cd scripts
+  - python daily.py
+  - cd ..
+
+before_deploy:
+  # Set up git user name and tag this commit
+  - git config --local user.name "nathanschepers"
+  - git config --local user.email "nathan.schepers@protonmail.com"
+
+deploy:
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+    keep_history: true
+    local_dir: docs/
+    on:
+      branch: master
+
+#after_success:
+#  - tail data/canarias_arcgis.csv
+#  - git status
+#  - git add data/canarias_arcgis.csv
+#  - git commit --allow-empty -m "[skip travis] Update canarias_arcgis.csv"
+#  - git push https://$GITHUB_TOKEN@github.com/nathanschepers/covid-canaries.git HEAD:master

@@ -1,0 +1,17 @@
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.1.min.js"></script>
+# Graph Template for github pages graphs
+By: <nathan.schepers@protonmail.com>
+
+<div id="Plot"></div>
+---
+## The Plot
+
+## Footnotes
+
+---
+Updated on: {DATE}
+
+<script>
+    item_text = {PLACEHOLDER};
+    Bokeh.embed.embed_item(item_text);
+</script>
