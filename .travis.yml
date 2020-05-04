@@ -21,10 +21,3 @@ deploy:
     local_dir: docs/
     on:
       branch: master
-
-#after_success:
-#  - tail data/canarias_arcgis.csv
-#  - git status
-#  - git add data/canarias_arcgis.csv
-#  - git commit --allow-empty -m "[skip travis] Update canarias_arcgis.csv"
-#  - git push https://$GITHUB_TOKEN@github.com/nathanschepers/covid-canaries.git HEAD:master
