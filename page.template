@@ -7,7 +7,7 @@ By: <nathan.schepers@protonmail.com>
 ## The Plot
 
 The above plot is generated from `scripts/test_plot_creation.py`. This plot is full of random data with random 'error
-bars'.
+bars'. There is a vertical bar called 'test_span' that is used as a date marker.
 
 ## Footnotes
 
